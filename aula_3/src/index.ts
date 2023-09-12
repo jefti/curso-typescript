@@ -1,12 +1,12 @@
-function multiply(num1:number, num2:number) {
+function multiply(num1:number, num2:number): number {
     return num1 * num2;
 }
 
-function sum(num1:number, num2:number) {
+function sum(num1:number, num2:number): number {
     return num1 + num2;
 }
 
-function isEven(num:number) {
+function isEven(num:number): boolean {
     return num % 2 === 0;
 }
 
@@ -14,7 +14,7 @@ function showResult(result:any) {
     if(isEven(result)) {
         console.log(`The result is ${result} and it's even!`);
     } else {
-        console.log(`The result is ${result} and it's not even!`);
+        console.log(`The result is ${result} and it's odd!`);
     }
 }
 
